@@ -84,7 +84,7 @@ interpret_program :: proc(program : []Op, state : ^ProgramState) {
                 for state.tape[state.ptr] != 0 { 
                     interpret_program(op.operand.([]Op), state)
                 }
-            case INPUT: continue
+            case INPUT: continue /* TODO */
             case OUTPUT: fmt.print(cast(rune)state.tape[state.ptr])
         } 
     }
