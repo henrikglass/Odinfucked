@@ -94,7 +94,7 @@ main :: proc() {
     /* parse args */
     args := os.args[1:]
     if len(args) != 1 {
-        fmt.println("Usage: bfwasm <brainfuck source file>")
+        fmt.println("Usage: bfodin <brainfuck source file>")
         os.exit(1)
     }
     filepath := args[0]
